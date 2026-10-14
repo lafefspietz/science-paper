@@ -1,0 +1,15 @@
+{
+    "json":"https://raw.githubusercontent.com/lafefspietz/science-paper/refs/heads/main/spore.json",
+    "php":"https://raw.githubusercontent.com/lafefspietz/science-paper/refs/heads/main/spore.php",
+    "files":[
+        "README.md",
+        "index.html",
+        "editor.html",
+        "php.js",
+        "save-file.php",
+        "load-file.php",
+        "list-files.php",
+        "spore.php",
+        "spore.json"
+    ]
+}
