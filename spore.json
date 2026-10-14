@@ -10,6 +10,8 @@
         "load-file.php",
         "list-files.php",
         "spore.php",
-        "spore.json"
+        "spore.json",
+        "references.html",
+        "references.bib"
     ]
 }

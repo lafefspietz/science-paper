@@ -35,7 +35,7 @@ ace.js is BSD license
         <td id = "currentfilename"></td>
     </tr>
     <tr>
-        <td>New File Name(end with .html, .js, .css, .py, .bat, .json, .php, .md, .txt):</td>
+        <td>New File Name(end with .html, .js, .css, .py, .bat, .json, .php, .md, .txt, .bib):</td>
         <td><input id = "newscrollinput"/></td>
     </tr>
 </table>
@@ -77,7 +77,9 @@ scrolls = [];
 list_files().then(files => {
     scrolls = files;
     for(var index = 0;index < scrolls.length;index++) {    
-        if(scrolls[index].substring(scrolls[index].length-5,scrolls[index].length) == ".html" || scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".txt" || scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".css" || scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".php" || scrolls[index].substring(scrolls[index].length-3,scrolls[index].length) == ".js" ||scrolls[index].substring(scrolls[index].length-3,scrolls[index].length) == ".py" || scrolls[index].substring(scrolls[index].length-3,scrolls[index].length) == ".md" ||    scrolls[index].substring(scrolls[index].length-5,scrolls[index].length) == ".json"|| scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".bat"|| scrolls[index].substring(scrolls[index].length-3,scrolls[index].length) == ".sh"){
+        if(scrolls[index].substring(scrolls[index].length-5,scrolls[index].length) == ".html" || scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".txt" ||
+        scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".bib" ||
+           scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".css" || scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".php" || scrolls[index].substring(scrolls[index].length-3,scrolls[index].length) == ".js" ||scrolls[index].substring(scrolls[index].length-3,scrolls[index].length) == ".py" || scrolls[index].substring(scrolls[index].length-3,scrolls[index].length) == ".md" ||    scrolls[index].substring(scrolls[index].length-5,scrolls[index].length) == ".json"|| scrolls[index].substring(scrolls[index].length-4,scrolls[index].length) == ".bat"|| scrolls[index].substring(scrolls[index].length-3,scrolls[index].length) == ".sh"){
      
         if(scrolls[index].substring(scrolls[index].length-5,scrolls[index].length) == ".html"){
             var newa = document.createElement("A");
@@ -197,6 +199,7 @@ function setMode() {
   const modeMap = {
     '.py': 'python',
     '.txt': 'text',
+    '.bib': 'text',
     '.md': 'markdown',
     '.tex': 'latex',
     '.js': 'javascript',
